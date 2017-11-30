@@ -1,18 +1,12 @@
 $(function() {
-  $("#animals").change(function() {
-  	if ($(this).val() == "1") {
-      $("#snakeInformation").show();
-      $("#polarBearInformation").hide();
-      $("#africanSwallowInformation").hide();
-    } else if ($(this).val() == "2") {
-      $("#polarBearInformation").show();
-      $("#snakeInformation").hide();
-      $("#africanSwallowInformation").hide();
-    } else if ($(this).val() == "3") {
-      $("#africanSwallowInformation").show();
-      $("#snakeInformation").hide();
-      $("#polarBearInformation").hide();
-    }
-  })
+  var height = parseInt(prompt("How tall are you in inches?"));
 
-});
+  if (height < 60) {
+    // debugger;
+    $(".smallrides").show();
+  } else if (height < 120 && height >= 60){
+    $(".mediumrides").show();
+  } else if (height >= 120) {
+    $(".tallrides").show();
+  }
+ });
