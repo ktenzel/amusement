@@ -12,12 +12,16 @@
     <div class="container">
     <h1>Animals</h1>
     <h2>What animal would you like to learn about?</h2>
-    <select class="form-control" id="animals">
-      <option value="">Select your animal</option>
-      <option value="1">Snake</option>
-      <option value="2">Polar Bear</option>
-      <option value="3">African Swallow</option>
-    </select>
+    <form class="form-group" action="index.html" method="submit" id="animalForm">
+      <select class="form-control" id="animals">
+        <option value="" id="placeHolder">Select your animal</option>
+        <option value="1" id="snake">Snake</option>
+        <option value="2" id="polarBear">Polar Bear</option>
+        <option value="3" id="africanSwallow">African Swallow</option>
+      </select>
+
+      <button type="button" name="selectButton">Select!</button>
+    </form>
 
     <div id="snakeInformation">
       <h3>Snakes!?</h3>
